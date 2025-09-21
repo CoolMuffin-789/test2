@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparrow Soar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Sparrow Soar</h1>
+      <p class="instructions">
+        Tap, click, or press the space bar to help the sparrow dodge the trees.
+      </p>
+      <canvas id="game" width="480" height="640" aria-label="Sparrow Soar game board"></canvas>
+      <section class="info">
+        <p aria-live="polite">
+          <span class="label">Score:</span> <span id="score">0</span>
+          <span class="label">Best:</span> <span id="best">0</span>
+        </p>
+        <button id="restart" type="button" class="hidden">Restart</button>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
