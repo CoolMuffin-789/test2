@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #8dd0ff 0%, #e7f6ff 100%);
+  color: #123;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(18, 34, 51, 0.25);
+}
+
+h1 {
+  margin-top: 0;
+  letter-spacing: 0.08em;
+}
+
+.instructions {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #8fd4ff 0%, #56c2ff 55%, #42a1ff 55%, #2f8f3b 100%);
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.2);
+  touch-action: manipulation;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.label {
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  background: #f7a325;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0.5rem 1.5rem rgba(247, 163, 37, 0.5);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 1.75rem rgba(247, 163, 37, 0.35);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.hidden {
+  display: none;
+}
